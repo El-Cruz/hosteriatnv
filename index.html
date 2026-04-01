@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+  html, body { height: 100%; margin: 0; }
+  * { box-sizing: border-box; }
+  .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+  .font-body { font-family: 'DM Sans', sans-serif; }
+
+  .page {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .photo-placeholder {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .photo-placeholder:hover { opacity: 0.9; }
+  .photo-placeholder .ph-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.7;
+  }
+
+  .stat-ring {
+    width: 88px; height: 88px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+  }
+
+  .divider-gold {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #b8860b, transparent);
+  }
+
+  @media print {
+    .page { page-break-after: always; box-shadow: none !important; }
+    .no-print { display: none !important; }
+  }
+
+  .scroll-wrapper {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #1a1a1a;
+  }
+
+  .fade-in { animation: fadeIn 0.6s ease both; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div class="scroll-wrapper" id="app"><!-- NAV -->
+
+   </nav><!-- PAGE 1: COVER -->
+   <div class="page min-h-[700px] flex flex-col" style="background: linear-gradient(135deg, #0a0f0d 0%, #1a2e1a 40%, #0d1f1a 100%);">
+    
+    <div class="flex-1 flex flex-col"><!-- Hero photo area -->
+    <img src="./img/principal.jpg" alt="Detalle Hostería" class="w-full h-64 sm:h-80 object-cover">
+
+     <div class="px-8 sm:px-14 py-10 flex-1 flex flex-col justify-center">
+      <div class="w-16 h-0.5 bg-amber-500 mb-6"></div>
+      <p class="font-body text-amber-400/80 text-xs tracking-[0.3em] uppercase mb-4">Documento Confidencial · Solo para inversionistas calificados</p>
+      <h1 id="cover-title" class="font-heading text-white text-3xl sm:text-4xl font-bold leading-tight mb-6" style="max-width: 650px;">Oportunidad de Inversión en Tonsupa: Negocio Hotelero Operativo con 80-90% de Ocupación en Temporada Alta</h1>
+      <div class="divider-gold w-48 my-6"></div>
+      <div class="flex flex-wrap gap-6 mt-2">
+       <div>
+        <p class="font-body text-amber-300/60 text-xs uppercase tracking-wider">Ubicación</p>
+        <p id="cover-location" class="font-body text-white text-sm font-medium mt-1">Tonsupa, Esmeraldas</p>
+       </div>
+       <div>
+        <p class="font-body text-amber-300/60 text-xs uppercase tracking-wider">Tipo</p>
+        <p class="font-body text-white text-sm font-medium mt-1">Hostería Operativa</p>
+       </div>
+       <div>
+        <p class="font-body text-amber-300/60 text-xs uppercase tracking-wider">Estatus</p>
+        <p class="font-body text-emerald-400 text-sm font-medium mt-1">● Generando ingresos</p>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="px-8 sm:px-14 pb-6">
+     <p class="font-body text-white/20 text-xs">Pág. 1 de 5 · Distribución restringida</p>
+    </div>
+   </div>
+   <div class="h-6"></div><!-- PAGE 2: EL DIAMANTE EN BRUTO -->
+   <div class="page fade-in" style="background: #fafaf5;">
+    <div class="px-8 sm:px-14 pt-10 pb-4">
+     <p class="font-body text-amber-700 text-xs tracking-[0.25em] uppercase mb-2">Sección 02</p>
+     <h2 class="font-heading text-gray-900 text-2xl sm:text-3xl font-bold">El Diamante en Bruto</h2>
+     <p class="font-body text-gray-500 text-sm mt-2 max-w-lg">Terreno con potencial masivo de expansión. Solo el 37% está construido.</p>
+    
+    
+    </div><!-- Terrain photos grid -->
+    <div class="px-8 sm:px-14 grid grid-cols-2 gap-3 mt-4">
+     <img src="./img/panoramica.jpg" alt="Panorámica del terreno" class="col-span-2 h-48 w-full object-cover rounded-xl shadow-sm">
+     <img src="./img/jadineras 2.jpg" alt="Jardineras y áreas verdes" class="col-span-1 h-36 w-full object-cover rounded-xl shadow-sm">
+     <img src="./img/camineras.jpeg" alt="Camineras" class="col-span-1 h-36 w-full object-cover rounded-xl shadow-sm">
+
+
+    </div><!-- Stats bar -->
+    <div class="px-8 sm:px-14 py-8">
+     <div class="bg-gray-900 rounded-2xl p-6 flex flex-wrap justify-around gap-4">
+      <div class="text-center">
+       <p id="stat-terrain" class="font-heading text-amber-400 text-3xl font-bold">3,000</p>
+       <p class="font-body text-gray-400 text-xs mt-1">m² Terreno Total</p>
+      </div>
+      <div class="text-center">
+       <p id="stat-built" class="font-heading text-amber-400 text-3xl font-bold">1,100</p>
+       <p class="font-body text-gray-400 text-xs mt-1">m² Construidos</p>
+      </div>
+      <div class="text-center">
+       <p class="font-heading text-emerald-400 text-3xl font-bold">1,900</p>
+       <p class="font-body text-gray-400 text-xs mt-1">m² Disponibles</p>
+      </div>
+      <div class="text-center">
+       <p class="font-heading text-white text-3xl font-bold">63%</p>
+       <p class="font-body text-gray-400 text-xs mt-1">Expansión Posible</p>
+      </div>
+     </div>
+    </div>
+    <div class="px-8 sm:px-14 pb-4">
+     <div class="bg-amber-50 border border-amber-200 rounded-xl p-5">
+      <p class="font-body text-amber-900 text-sm font-semibold mb-1">💡 Potencial de Expansión</p>
+      <p class="font-body text-amber-800 text-xs leading-relaxed">Con 1,900 m² libres, el inversionista puede añadir suites adicionales, un área de spa, locales comerciales o una zona gastronómica premium sin tocar la operación existente.</p>
+     </div>
+    </div>
+    <div class="px-8 sm:px-14 pb-6">
+     <p class="font-body text-gray-300 text-xs">Pág. 2 de 5</p>
+    </div>
+   </div>
+
+
+
+   <div class="h-6"></div><!-- PAGE 3: MOTOR DE EFECTIVO -->
+   <div class="page fade-in" style="background: #fff;">
+    <div class="px-8 sm:px-14 pt-10 pb-4">
+     <p class="font-body text-amber-700 text-xs tracking-[0.25em] uppercase mb-2">Sección 03</p>
+     <h2 class="font-heading text-gray-900 text-2xl sm:text-3xl font-bold">El Motor de Efectivo</h2>
+     <p class="font-body text-gray-500 text-sm mt-2">Casas completas + Suites: diversificación que maximiza ingresos.</p>
+    </div>
+    <div class="px-8 sm:px-14 grid grid-cols-3 gap-3 mt-4">
+
+     <img src="./img/cocina suite.jpg" alt="Sala y cocina equipada" class="col-span-2 h-44 w-full object-cover rounded-xl shadow-sm">
+    
+     <img src="./img/habitacion principal 2.jpeg" alt="Suite principal" class="col-span-1 h-44 w-full object-cover rounded-xl shadow-sm">
+
+    </div>
+
+    <div class="px-8 sm:px-14 grid grid-cols-3 gap-3 mt-3">
+
+    <img src="./img/habitacion doble.jpg" alt="Habitacion principal" class="col-span-1 h-32 w-full object-cover rounded-xl shadow-sm">
+    <img src="./img/Menaje cocina.jpeg" alt="Menaje de cocina" class="col-span-1 h-32 w-full object-cover rounded-xl shadow-sm">
+    <img src="./img/ping pong.jpeg" alt="Infraestructura técnica" class="col-span-1 h-32 w-full object-cover rounded-xl shadow-sm">
+
+
+
+    </div><!-- Inventory summary -->
+    <div class="px-8 sm:px-14 py-6">
+     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+       <p class="font-heading text-gray-900 text-2xl font-bold">3</p>
+       <p class="font-body text-gray-500 text-xs mt-1">Casas Completas</p>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+       <p class="font-heading text-gray-900 text-2xl font-bold">7</p>
+       <p class="font-body text-gray-500 text-xs mt-1">Suites Equipadas</p>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+       <p id="stat-guests" class="font-heading text-gray-900 text-2xl font-bold">65</p>
+       <p class="font-body text-gray-500 text-xs mt-1">Huéspedes Máx.</p>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+       <p class="font-heading text-gray-900 text-2xl font-bold">16</p>
+       <p class="font-body text-gray-500 text-xs mt-1">Años Operando</p>
+      </div>
+     </div>
+    </div>
+    <div class="px-8 sm:px-14 pb-4">
+     <div class="bg-blue-50 border border-blue-200 rounded-xl p-5">
+      <p class="font-body text-blue-900 text-sm font-semibold mb-1">🔧 Listo para Modernización</p>
+      <p class="font-body text-blue-800 text-xs leading-relaxed">La infraestructura eléctrica y de climatización existente permite implementar fácilmente sistemas de automatización (cerraduras inteligentes, control remoto de A/C), reduciendo costos operativos sin obra mayor.</p>
+     </div>
+    </div>
+    <div class="px-8 sm:px-14 pb-6">
+     <p class="font-body text-gray-300 text-xs">Pág. 3 de 5</p>
+    </div>
+   </div>
+
+
+   <div class="h-6"></div><!-- PAGE 4: AMENIDADES -->
+   <div class="page fade-in" style="background: #f5f5f0;">
+    <div class="px-8 sm:px-14 pt-10 pb-4">
+     <p class="font-body text-amber-700 text-xs tracking-[0.25em] uppercase mb-2">Sección 04</p>
+     <h2 class="font-heading text-gray-900 text-2xl sm:text-3xl font-bold">Amenidades y Capacidad</h2>
+     <p class="font-body text-gray-500 text-sm mt-2">Infraestructura que retiene huéspedes y genera ingresos adicionales.</p>
+    </div>
+
+    <div class="px-8 sm:px-14 grid grid-cols-2 gap-3 mt-4">
+
+     <img src="./img/piscina.jpg" alt="Piscina principal" class="col-span-2 h-44 w-full object-cover rounded-xl shadow-sm">
+     <img src="./img/Salon de eventos.jpeg" alt="Salón de eventos" class="col-span-1 h-44 w-full object-cover rounded-xl shadow-sm">
+     <img src="./img/bar y futbolin.jpeg" alt="Bar y futbolín" class="col-span-1 h-44 w-full object-cover rounded-xl shadow-sm">
+    </div>
+    <div class="px-8 sm:px-14 py-6">
+     <div class="flex flex-wrap gap-3"><span class="bg-white border border-gray-200 rounded-full px-4 py-2 font-body text-xs text-gray-700 flex items-center gap-2"><i data-lucide="waves" style="width:14px;height:14px;color:#2196F3"></i> 2 Piscinas</span> <span class="bg-white border border-gray-200 rounded-full px-4 py-2 font-body text-xs text-gray-700 flex items-center gap-2"><i data-lucide="calendar" style="width:14px;height:14px;color:#8d6e63"></i> Salón/Comedor 50 pax</span> <span class="bg-white border border-gray-200 rounded-full px-4 py-2 font-body text-xs text-gray-700 flex items-center gap-2"><i data-lucide="gamepad-2" style="width:14px;height:14px;color:#66bb6a"></i> Recreación</span> <span id="stat-occupancy-badge" class="bg-white border border-gray-200 rounded-full px-4 py-2 font-body text-xs text-gray-700 flex items-center gap-2"><i data-lucide="trending-up" style="width:14px;height:14px;color:#f59e0b"></i> 80-90% Ocupación Alta</span>
+     </div>
+    </div>
+    <div class="px-8 sm:px-14 pb-6">
+     <p class="font-body text-gray-300 text-xs">Pág. 4 de 5</p>
+    </div>
+   </div>
+   <div class="h-6"></div><!-- PAGE 5: LOGÍSTICA + CIERRE -->
+   <div class="page fade-in" style="background: #fff;">
+    <div class="px-8 sm:px-14 pt-10 pb-4">
+     <p class="font-body text-amber-700 text-xs tracking-[0.25em] uppercase mb-2">Sección 05</p>
+     <h2 class="font-heading text-gray-900 text-2xl sm:text-3xl font-bold">Logística y Seguridad</h2>
+     <p class="font-body text-gray-500 text-sm mt-2">Paz mental para el huésped y el inversionista.</p>
+    </div>
+    
+    <div class="px-8 sm:px-14 grid grid-cols-2 gap-3 mt-4">
+     <img src="./img/Parqueadero.jpeg" alt="Parqueadero interno" class="col-span-1 h-40 w-full object-cover rounded-xl shadow-sm">
+    <img src="./img/parqueadero 2.png" alt="Parqueadero externo" class="col-span-1 h-40 w-full object-cover rounded-xl shadow-sm">
+
+
+    </div><!-- CTA Section -->
+    <div class="px-8 sm:px-14 py-8">
+     <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-center">
+      <p class="font-body text-amber-400 text-xs tracking-[0.25em] uppercase mb-3">Próximo Paso</p>
+      <h3 class="font-heading text-white text-xl sm:text-2xl font-bold mb-3">¿Listo para conocer más detalles?</h3>
+      <p class="font-body text-gray-400 text-sm mb-6 max-w-md mx-auto">El nombre y ubicación serán revelados al contactarse con nosotros.</p>
+      
+    <div class="flex flex-wrap justify-center gap-3">
+        <div onclick="copiarAlPortapapeles(this, '+593 969522440')" class="bg-amber-500/10 border border-amber-500/30 rounded-lg px-5 py-3 text-center cursor-pointer hover:bg-amber-500/20 transition-all active:scale-95">
+        <p class="font-body text-amber-400 text-xs font-bold flex items-center gap-2">
+            <i data-lucide="copy" style="width:14px;height:14px"></i>
+            <span>+593 96 952 2440</span>
+        </p>
+        </div>
+    </div>
+
+       
+      </div>
+     </div>
+    </div>
+
+
+    <div class="px-8 sm:px-14 pb-6 flex items-center justify-between">
+     <p class="font-body text-gray-300 text-xs">Pág. 5 de 5</p>
+    </div>
+   </div>
+  </div>
+  <script>
+const defaultConfig = {
+  cover_title: 'Oportunidad de Inversión Turnkey en Tonsupa: Negocio Hotelero Operativo con 80-90% de Ocupación en Temporada Alta',
+  property_location: 'Tonsupa, Esmeraldas',
+  total_terrain: '3,000',
+  built_area: '1,100',
+  max_guests: '65 huéspedes',
+  occupancy_rate: '80-90%',
+  background_color: '#1a1a1a',
+  surface_color: '#ffffff',
+  text_color: '#111827',
+  primary_action_color: '#b8860b',
+  secondary_action_color: '#546e7a',
+  font_family: 'Playfair Display',
+  font_size: 16
+};
+
+function copiarAlPortapapeles(elemento, texto) {
+    // Usamos la API moderna del portapapeles
+    navigator.clipboard.writeText(texto).then(() => {
+        // Seleccionamos el span donde está el número
+        const spanTexto = elemento.querySelector('span');
+        const textoOriginal = spanTexto.innerText;
+        
+        // Feedback visual
+        spanTexto.innerText = '¡Copiado!';
+        elemento.classList.add('bg-amber-500/30'); // Resalta un poco más
+        
+        // Restauramos el texto después de 2 segundos
+        setTimeout(() => {
+            spanTexto.innerText = textoOriginal;
+            elemento.classList.remove('bg-amber-500/30');
+        }, 2000);
+    }).catch(err => {
+        console.error('Error al copiar al portapapeles: ', err);
+    });
+}
+
+function applyConfig(config) {
+  const c = { ...defaultConfig, ...config };
+
+  document.getElementById('cover-title').textContent = c.cover_title;
+  document.getElementById('cover-location').textContent = c.property_location;
+  document.getElementById('stat-terrain').textContent = c.total_terrain;
+  document.getElementById('stat-built').textContent = c.built_area;
+
+  const guestNum = c.max_guests.replace(/[^0-9]/g, '') || '65';
+  document.getElementById('stat-guests').textContent = guestNum;
+
+  document.getElementById('app').style.background = c.background_color;
+
+  // Font
+  const headings = document.querySelectorAll('.font-heading');
+  headings.forEach(el => el.style.fontFamily = `${c.font_family}, Georgia, serif`);
+
+  // Font size scaling
+  const base = c.font_size || 16;
+  document.querySelectorAll('.font-body').forEach(el => {
+    const current = window.getComputedStyle(el).fontSize;
+    // keep relative sizing intact
+  });
+}
+
+if (window.elementSdk) {
+  window.elementSdk.init({
+    defaultConfig,
+    onConfigChange: async (config) => applyConfig(config),
+    mapToCapabilities: (config) => {
+      const c = { ...defaultConfig, ...config };
+      return {
+        recolorables: [
+          { get: () => c.background_color, set: (v) => { c.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+          { get: () => c.surface_color, set: (v) => { c.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+          { get: () => c.text_color, set: (v) => { c.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+          { get: () => c.primary_action_color, set: (v) => { c.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); } },
+          { get: () => c.secondary_action_color, set: (v) => { c.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } },
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => c.font_family,
+          set: (v) => { c.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+        },
+        fontSizeable: {
+          get: () => c.font_size,
+          set: (v) => { c.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+        }
+      };
+    },
+    mapToEditPanelValues: (config) => {
+      const c = { ...defaultConfig, ...config };
+      return new Map([
+        ['cover_title', c.cover_title],
+        ['property_location', c.property_location],
+        ['total_terrain', c.total_terrain],
+        ['built_area', c.built_area],
+        ['max_guests', c.max_guests],
+        ['occupancy_rate', c.occupancy_rate],
+      ]);
+    }
+  });
+}
+
+lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e4a28a766a295bf',t:'MTc3NDkwNTYzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
